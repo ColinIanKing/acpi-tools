@@ -1,7 +1,7 @@
 name: acpi-tools
 version: git
 version-script: |
-    echo $(cd parts/acpi-tools/src; git describe --tags)
+    echo $(cd parts/acpi-tools/src; git describe --tags | tr '_' '-')
 summary: ACPICA tools
 description: ACPICA tools, including ACPI compiler and disassembler (iasl), Simulator/Executor (acpiexec), ACPI table dump (acpidump), acpi table extractor (acpixtract) and ACPI help (acpihelp)
 
